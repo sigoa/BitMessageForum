@@ -50,7 +50,7 @@ class BMF::BMF < Sinatra::Base
     end
 
     def verify_address addr
-      if addr[0..2] == "BM-"
+      if addr[0..2] == "BM+"
         addr = addr[3..-1]
       end
 
