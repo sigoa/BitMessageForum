@@ -8,18 +8,17 @@
 # BMF
 
 BitMessageForum allows you to browse and post bitmessages in a
-forum-like view in the web browser of your choice.
+forum-like view in the web browser of your choice, i.e. firefox.
 
 Although BMF is configured to run in your browser, it is designed to
-be a local application.  it assumes that if you can talk to your
-bitmessage server, you are fully authorized to read/send/delete any
+be a local application.  It assumes that if you can talk to your
+bitmessage server (e.g. run by pypy as **daemon**), you are fully authorized to read/send/delete any
 messages, create new identities, etc.
 
-It is **not** designed to be setup as a publically facing website.
-Although it would be possible to use the software to mirror a channel
-via a web interface, this would break the self-destruct feature that
-removes bitmessages from the network after a few days. So please don't
-do that!
+BMF can be setup as a publically facing website. Although it would be possible to use the software to mirror a channel
+via a web interface, this would require some fiddling.
+
+Modify your BMF web pages as root e.g. in  /var/lib/gems/2.3.0/gems/bmf-0.2.2/lib/bmf/views/layout.haml
 
 ## Installation
 
