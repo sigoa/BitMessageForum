@@ -103,15 +103,6 @@ On Debian based systems:
     bundle install # will need sudo if using system ruby
     ./bmf-dev
 
-### Verifying the source
-
-All stable releases are tagged in git and signed by my OpenPGP key
-listed below.  To verify a particular release and run that code:
-
-    master-blaster:BitMessageForum grant$ git verify-tag 0.2.2
-    gpg: Signature made Sun Aug  4 17:59:35 2013 EDT using RSA key ID A18A54D6
-    gpg: Good signature from "Grant T. Olson (Personal email) <kgo at grant-olson dot net>"
-    master-blaster:BitMessageForum grant$ git checkout 0.2.2
 
 ### Running PyBitmessage as a daemon
 
@@ -127,28 +118,3 @@ Next, start PyBitmessage like so:
     nohup python src/bitmessagemain.py &
 
 This will start up PyBitmessage in the background without the QT GUI.
-
-## Contact
-
-Found a bug? [File an issue.](https://github.com/grant-olson/BitMessageForum/issues)
-
-Need help?  Ask on the bmf support channel.
-
-    * Name: bmf_support
-    
-    * Address: BM-2DBsnPXWVR7PbC5qMEYAdgtaSQnkr5X7ng 
-
-For announcements of new releases and security issues, subscribe to BM-2DABVRoCRtwKZLyVCBZ3n6PuC4n7a4zLsA
-
-Or send me a personal bitmessage: BM-2DAxhHpd2Sez4oQmZu5sEAMJbnNp3yDFCU 
-
-Email me:  kgo at grant-olson dot net.
-
-OpenPGP Key:
-
-    pub   2048R/E3B5806F 2010-01-11 [expires: 2014-01-03]
-          Key fingerprint = A530 C31C D762 0D26 E2BA  C384 B6F6 FFD0 E3B5 806F
-    uid                  Grant T. Olson (Personal email) <kgo at grant-olson dot net>
-    sub   2048R/6A8F7CF6 2010-01-11 [expires: 2014-01-03]
-    sub   2048R/A18A54D6 2010-03-01 [expires: 2014-01-03]
-    sub   2048R/D53982CE 2010-08-31 [expires: 2014-01-03]
